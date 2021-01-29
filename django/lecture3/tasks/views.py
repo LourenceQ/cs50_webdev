@@ -25,6 +25,7 @@ def add(request):
             return HttpResponseRedirect(reverse("tasks:index"))
         else:
             return render(request,"tasks/add.html",{
+                "form":form,
                 "form":form
             })
 
